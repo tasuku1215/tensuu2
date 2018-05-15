@@ -19,7 +19,6 @@
   <p>田中</p>
   </th>
   <td>
-  <!--  -->
    <input type="text" name="tanaka1">
    </td>  
    <td>
