@@ -1,23 +1,15 @@
 <?php
+  $size=explode("_",$_GET['size']);
   $array_list=array();
-  $array[]='田中';
-  for($i=1;$i<=3;$i++){
-  $array[]=$_GET['tanaka'.$i];
+  for($j=1;$j<=$size[0];$j++){
+    $name_list[]=$_GET['name'.$j];
+    $kamoku_list[]=$_GET['kamoku'.$j];
+  for($i=1;$i<=$size[1];$i++){
+  $array[]=$_GET['data'.$j.'_'.$i];
   }
   $array_list[]=$array;
   $array=array();
-  $array[]='山田';
-  for($i=1;$i<=3;$i++){
-  $array[]=$_GET['yamada'.$i];
-  }
-  $array_list[]=$array;
-  $array=array();
-  $array[]='永山';
-  for($i=1;$i<=3;$i++){
-  $array[]=$_GET['nagayama'.$i];
-  }
-  $array_list[]=$array;
-?>
+  }?>
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
 <head>
@@ -54,5 +46,11 @@
     }
     ?>
   </table>
+    <pre><?php
+  print_r($array_list);
+  print_r($name_list);
+  print_r($kamoku_list);
+  print_r($size);
+  ?></pre>
 </body>
 </html>

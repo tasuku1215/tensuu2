@@ -10,54 +10,60 @@
   <table>
   <tr>
   <th></th>
-  <th>PH</th>
-  <th>DB</th>
-  <th>CS</th>
+  <th><input type="text" name="kamoku1"></th>
+  <th><input type="text" name="kamoku2"></th>
+  <th><input type="text" name="kamoku3"></th>
+  </tr>
+  <th></th>
+  <th>科目名1</th>
+  <th>科目名2</th>
+  <th>科目名3</th>
   </tr>
   <tr>
   <th>
-  <p>田中</p>
+  <p><input type="text" name="name1">名前1</p>
   </th>
   <td>
-   <input type="text" name="tanaka1">
+   <input type="text" name="data1_1">
    </td>  
    <td>
-   <input type="text" name="tanaka2">
+   <input type="text" name="data1_2">
    </td>  
    <td>
-   <input type="text" name="tanaka3">
+   <input type="text" name="data1_3">
    </td>
    </tr>
    <tr>
   <th>
-   <p>山田</p>
+   <p><input type="text" name="name2">名前2</p>
    </th>
    <td>
-  <input type="text" name="yamada1">
+  <input type="text" name="data2_1">
    </td>  
    <td>
-  <input type="text" name="yamada2">
+  <input type="text" name="data2_2">
    </td>  
    <td>
-  <input type="text" name="yamada3">
+  <input type="text" name="data2_3">
    </td>
    </tr>
    <tr>
   <th>
-   <p>永山</p>   
+   <p><input type="text" name="name3">名前3</p>   
    </th>
    <td>
-   <input type="text" name="nagayama1">
+   <input type="text" name="data3_1">
    </td>
    <td>
-   <input type="text" name="nagayama2">
+   <input type="text" name="data3_2">
    </td>
    <td>
-   <input type="text" name="nagayama3">
+   <input type="text" name="data3_3">
    </td>
    </tr>
    </table>
    <input type="submit" value="次へ">
+    <input type="hidden" name="size" value="3_3">
   </form>
  </body>
 </html>
